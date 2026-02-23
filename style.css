@@ -1,1 +1,386 @@
+/* ---------- Root Colors ---------- */
+:root {
+  --navy: #1f2a44;
+}
 
+/* ---------- Base ---------- */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #f4f2ed;
+  color: #1b1b1b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Banner ---------- */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;            /* bigger banner for impact */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom; 
+  display: block;
+  z-index: 1;
+}
+
+
+/* ---------- Header ---------- */
+header {
+  padding: 0;
+  text-align: center;
+  background: #f8f7f4;
+}
+
+.instagram-btn {
+  display: block;
+  padding: 12px 24px;         /* button size */
+  background: var(--navy);      /* navy background */
+  color: white;                  /* white text */
+  text-decoration: none;         /* no underline */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: 5px solid white;      /* subtle white border */
+  border-radius: 5px;           /* slightly rounded corners */
+  transition: all 0.2s ease;    /* smooth hover effect */
+  text-align: center; 
+}
+
+.instagram-btn:hover {
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
+}
+
+
+/* ---------- Navigation ---------- */
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--navy);
+}
+
+nav li {
+  padding: 12px 25px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/*        MOBILE NAV FIX         */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-wrap: wrap;          /* allows items to move to next line */
+  }
+
+  nav li {
+    padding: 10px 15px;       /* slightly smaller padding */
+    border-right: none;       /* remove vertical lines on wrap */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  nav a {
+    font-size: 0.95rem;       /* slightly smaller text */
+  }
+}
+
+/* ---------- Main Content ---------- */
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
+}
+
+/* ---------- Sections ---------- */
+section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #777;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+  border-left: 6px solid var(--navy);
+  padding-left: 0.6rem;
+  color: var(--navy);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+
+/* ============================= */
+/*        BISON EXCLUSIVE        */
+/* ============================= */
+
+/* Article Layout Card */
+#bison-exclusive .layout {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+  padding: 45px 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* Remove spacing from last section */
+#bison-exclusive .layout:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================= */
+/*           MAIN AREA           */
+/* ============================= */
+
+#bison-exclusive main {
+  flex: 3;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* Section labels (Question of the Week, etc.) */
+#bison-exclusive .section-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+/* Headlines */
+#bison-exclusive h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#bison-exclusive h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph spacing */
+#bison-exclusive p {
+  margin-bottom: 18px;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* ============================= */
+/*          SIDEBAR              */
+/* ============================= */
+
+#bison-exclusive .special-column {
+  flex: 1;
+  padding: 28px;
+  background-color: #eef2f7;
+  border-left: 4px solid var(--navy);
+  font-size: 16px;
+  line-height: 1.65;
+  border-radius: 8px;
+}
+
+#bison-exclusive .special-column strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  #bison-exclusive {
+    padding: 70px 16px;
+  }
+
+  #bison-exclusive .layout {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 24px;
+  }
+
+  #bison-exclusive main {
+    font-size: 17px;
+  }
+
+  #bison-exclusive h1 {
+    font-size: 26px;
+  }
+
+  #bison-exclusive h2 {
+    font-size: 18px;
+  }
+
+  #bison-exclusive p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  #bison-exclusive .special-column {
+    border-left: none;
+    border-top: 4px solid var(--navy);
+  }
+}
+
+
+/* ============================= */
+/*         ABOUT TEAM CAROUSEL   */
+/* ============================= */
+
+#about-team {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#about-team h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Carousel container */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+/* Hide scrollbar (optional but clean) */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Individual slides */
+.team-member {
+  min-width: 300px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  background: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+}
+
+.role {
+  font-weight: bold;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ============================= */
+/*        MOBILE CAROUSEL FIX    */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .carousel {
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .team-member {
+    min-width: 85%;        /* nearly full width */
+    scroll-snap-align: center;
+  }
+
+  .team-member p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+}
+
+
+
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  padding: 1.2rem;
+  border-top: 2px solid var(--navy);
+ background: #f8f7f4;   /* light background color */
+}
