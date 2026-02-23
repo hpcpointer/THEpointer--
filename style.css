@@ -124,6 +124,24 @@ header {
     border-bottom: none;
   }
 }
+
+.back-link a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #002244; /* Bison Blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 15px 0;
+  transition: background 0.2s;
+}
+
+.back-link a:hover {
+  background-color: #0055aa;
+}
+
+
+
 /* ---------- Main Content ---------- */
 main {
   max-width: 900px;
