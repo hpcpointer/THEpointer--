@@ -63,62 +63,67 @@ header {
 }
 
 
-/* ---------- Navigation ---------- */
-nav ul {
-  display: flex;
-  justify-content: center;
+/* ----------------------------- */
+/*  Page Navigation (top-level)  */
+/* ----------------------------- */
+#page-nav, #section-nav {
+  background-color: var(--navy, #002244);
+  font-family: Georgia, "Times New Roman", serif;
   margin: 0;
   padding: 0;
-  list-style: none;
-  background: var(--navy);
 }
 
-nav li {
+#page-nav ul, #section-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* responsive */
+}
+
+#page-nav li, #section-nav li {
   padding: 12px 25px;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-nav li:last-child {
+#page-nav li:last-child, #section-nav li:last-child {
   border-right: none;
 }
 
-nav a {
+#page-nav a, #section-nav a {
   text-decoration: none;
   color: white;
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: normal;
   letter-spacing: 0.5px;
+  transition: color 0.2s, text-decoration 0.2s;
 }
 
-nav a:hover {
+#page-nav a:hover, #section-nav a:hover {
   text-decoration: underline;
+  color: #FFD700; /* optional highlight */
 }
 
-/* ============================= */
-/*        MOBILE NAV FIX         */
-/* ============================= */
-
+/* ----------------------------- */
+/*       Mobile Adjustments       */
+/* ----------------------------- */
 @media (max-width: 768px) {
-
-  nav ul {
-    flex-wrap: wrap;          /* allows items to move to next line */
+  #page-nav ul, #section-nav ul {
+    flex-direction: column;
+    gap: 8px;
   }
 
-  nav li {
-    padding: 10px 15px;       /* slightly smaller padding */
-    border-right: none;       /* remove vertical lines on wrap */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  #page-nav li, #section-nav li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
   }
 
-  nav li:last-child {
+  #page-nav li:last-child, #section-nav li:last-child {
     border-bottom: none;
   }
-
-  nav a {
-    font-size: 0.95rem;       /* slightly smaller text */
-  }
 }
-
 /* ---------- Main Content ---------- */
 main {
   max-width: 900px;
