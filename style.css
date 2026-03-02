@@ -402,6 +402,145 @@ section h2 {
 
 
 /* ============================= */
+/*         POSTAL BISON          */
+/* ============================= */
+
+.postal-container {
+  max-width: 820px;
+  margin: 80px auto;
+  padding: 30px;
+}
+
+/* Header */
+.postal-header {
+  text-align: center;
+  padding: 40px 30px;
+  background: linear-gradient(to right, var(--navy), #2d3c66);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.postal-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.postal-header p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--bison-gold);
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+/* Main Card */
+.postal-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  border-left: 6px solid var(--bison-gold);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  margin-bottom: 60px;
+}
+
+.postal-card h2 {
+  margin-top: 0;
+  color: var(--navy);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+/* Question Styling */
+.question {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 25px 0;
+  padding: 20px;
+  background: var(--soft-blue);
+  border-left: 4px solid var(--navy);
+  line-height: 1.7;
+}
+
+/* Response Box */
+.response {
+  background: #fbfaf6;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.response h3 {
+  margin-top: 0;
+  color: var(--navy);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Archive */
+.archive h2 {
+  color: var(--navy);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.archive-item {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s ease;
+  border-left: 4px solid transparent;
+}
+
+.archive-item:hover {
+  border-left: 4px solid var(--bison-gold);
+  background: var(--soft-blue);
+  transform: translateX(4px);
+}
+
+.archive-item h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.archive-item span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
+
+
+
+
+/* ============================= */
 /*      MOBILE RESPONSIVE CSS     */
 /* ============================= */
 
