@@ -407,3 +407,110 @@ footer {
   border-top: 2px solid var(--navy);
  background: #f8f7f4;   /* light background color */
 }
+
+
+
+
+
+/* ------ Postal Bison --------*/
+
+body {
+  margin: 0;
+  font-family: ''Courier New', Courier, monospace;
+  background-color: #f4f2ed;
+  color: #1a1a1a;
+}
+
+.postal-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.postal-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.postal-header h1 {
+  font-size: 2.5rem;
+  color: #1b3c73; /* School Blue */
+  margin-bottom: 10px;
+}
+
+.postal-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1b3c73;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #142b55;
+}
+
+.postal-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+.postal-card h2 {
+  margin-top: 0;
+  color: #1b3c73;
+}
+
+.question {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.response {
+  background-color: #eef2fb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.response h3 {
+  margin-top: 0;
+  color: #1b3c73;
+}
+
+.archive h2 {
+  color: #1b3c73;
+  margin-bottom: 20px;
+}
+
+.archive-item {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.archive-item h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.archive-item span {
+  font-size: 0.9rem;
+  color: #777;
+}
