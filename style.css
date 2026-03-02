@@ -396,30 +396,7 @@ section h2 {
 }
 
 
-
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  opacity: 0.7;
-  padding: 1.2rem;
-  border-top: 2px solid var(--navy);
- background: #f8f7f4;   /* light background color */
-}
-
-
-
-
-
 /* ------ Postal Bison --------*/
-
-body {
-  margin: 0;
-  font-family: ''Courier New', Courier, monospace;
-  background-color: #f4f2ed;
-  color: #1a1a1a;
-}
 
 .postal-container {
   max-width: 800px;
@@ -514,3 +491,25 @@ body {
   font-size: 0.9rem;
   color: #777;
 }
+
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  padding: 1.2rem;
+  border-top: 2px solid var(--navy);
+ background: #f8f7f4;   /* light background color */
+}
+
+
+
+
+
+
