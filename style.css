@@ -327,8 +327,11 @@ section h2 {
 /* Carousel container */
 .carousel {
   display: flex;
-  overflow-x: auto;
+  flex-direction: column;   /* stack items vertically */
+  overflow-x: hidden;
+  overflow-y: auto;
   gap: 30px;
+  height:300px;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
 }
