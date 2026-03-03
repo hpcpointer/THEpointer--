@@ -336,10 +336,7 @@ section h2 {
   padding-bottom: 10px;
 }
 
-/* Hide scrollbar (optional but clean) */
-.carousel::-webkit-scrollbar {
-  display: none;
-}
+
 
 .carousel {
   -ms-overflow-style: none;
